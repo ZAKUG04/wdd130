@@ -5,7 +5,6 @@
     padding: 15px;
     background-color: #247;
     color: #fff;
-
 }
 
 .callout img {
@@ -13,7 +12,8 @@
     margin: 0 0 10px 15px;
     border: 1px solid #000;
     padding: 3px;
-    width: 100px;
+    background-color: #bbb;
+    width: 15   0px;
     height: auto;
 }
 
