@@ -1,0 +1,355 @@
+html, body, main .hero-img {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color:  hsla(240, 100%, 99%, 1);
+    color: hsla(224, 14%, 22%, 1);
+}
+
+/*This is to make the logo appear on the left, centered with its name.*/
+.Logo{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-right: 10px; 
+    border-radius: 10px 0px 10px 0;  
+    
+}
+.Logo-title{
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    gap: 10px;
+}
+/*This changes the color of the header and also makes the lists look better.*/
+header {
+  
+    background-color: hsla(224, 14%, 22%, 1);
+    color: hsla(240, 100%, 99%, 1);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    gap: 1rem;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: hsla(224, 14%, 22%, 1);
+}
+header h1{
+    margin: 0;
+    font-size: 1.8rem;
+    color: hsla(60, 100%, 76%, 1);;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+nav a:hover{
+    background-color: hsla(257, 100%, 93%, 1);
+    color:hsla(224, 14%, 22%, 1) ;
+    padding: 10px;
+    border-radius: 10px;
+}
+nav a {
+    color: hsla(240, 100%, 99%, 1);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #003845;
+    color: hsla(240, 100%, 99%, 1);
+    padding: 1rem;
+    position: relative;
+}
+/* Positions the main image right below the header and crops its height */
+.hero-img img{
+    width: 100%;
+    display: block;
+    height: 50vh;  
+    object-fit: cover;
+}
+html, body, main, .hero-image {
+    margin: 0;
+    padding: 0;
+}
+/* Positions the 'Welcome' text above the main image for a layered effect */
+
+#home{
+    font-size: 40px;
+    padding: 1rem;
+    position: absolute;
+    top: 35vh;
+    right: 50vh;
+    color: hsla(240, 100%, 99%, 1);
+    text-shadow: 0 0 10px #403e40, 0 0 20px #383338;
+
+}
+/* Applies styling to the About Us section so that its image and layout appear well-designed */
+
+#about-us {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-us-image {
+  flex: 1;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.about-us-text {
+  flex: 2;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-us-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-us-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #555;
+}
+@media (max-width: 768px) {
+  #about-us {
+    flex-direction: column;
+    padding: 1rem;
+  }}
+
+/* Applies styling to the trip and tour section so that its image and layout appear well-designed */
+
+
+#trip-and-tour {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trip-image {
+  flex: 1;
+}
+
+.trip-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.trip-text {
+  flex: 2;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.trip-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.trip-text p, .trip-text ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.trip-text ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.trip-text li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  #trip-and-tour {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .trip-image, .trip-text {
+    flex: unset;
+    width: 100%;
+  }
+
+  .trip-text h2 {
+    text-align: center;
+  }
+}
+ul li i {
+  font-size: 1.2rem;
+  color: #1abc9c; 
+  margin-right: 8px;
+  
+}
+ul{
+  list-style: none;
+}
+/* Applies styling to the reservation button and creates a pop-up effect below it to simulate a reservation process */
+
+#reservation-confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 2rem auto 3rem auto;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: hsla(257, 100%, 93%, 1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#reservation-confirm h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: hsla(224, 14%, 22%, 1);
+}
+
+.reserve-btn {
+  background-color: rgb(113, 108, 125);;
+  color: rgb(255, 254, 254);
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(203, 156, 1, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.reserve-btn:hover {
+  background-color: rgb(193, 171, 248);;
+  color: #000000;
+  box-shadow: 0 8px 20px rgba(179, 125, 0, 0.6);
+}
+
+.success-message {
+  display: none;
+  margin-top: 2rem;
+  background-color: #d4edda;
+  color: #155724;
+  padding: 1.2rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(21, 87, 36, 0.3);
+  font-weight: 600;
+  max-width: 400px;
+}
+
+#toggle-message:checked + label + .success-message {
+  display: block;
+}
+/* Applies styling to the community blog section so that its image and layout appear well-designed */
+
+.community-blog {
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.community-blog .blog-image {
+  flex: 1;
+}
+
+.community-blog .blog-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.community-blog .blog-text {
+  flex: 2;
+}
+
+.community-blog h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: hsla(224, 14%, 22%, 1);
+}
+
+.community-blog p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.community-blog ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.community-blog ul li {
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+.community-blog ul li a.blog-link {
+  font-weight: 600;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.community-blog ul li a.blog-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* Applies styling to the contact us section so that its image and layout appear well-designed */
+
+#contact{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #555;
+}
