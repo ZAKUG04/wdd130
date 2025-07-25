@@ -1,3 +1,6 @@
+/* ------------------------------ */
+/* BASES */
+/* ------------------------------ */
 html, body, main .hero-img {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -7,24 +10,31 @@ html, body, main .hero-img {
     color: hsla(224, 14%, 22%, 1);
 }
 
-/*This is to make the logo appear on the left, centered with its name.*/
+
+
+/* ------------------------------ */
+/* LOGO Y HEADER */
+/* ------------------------------ */
+
+/* Logo: margin y border */
 .Logo{
     width: 70px;
     height: 70px;
     object-fit: contain;
     margin-right: 10px; 
     border-radius: 10px 0px 10px 0;  
-    
 }
+
+/* Contenedor logo + títle */
 .Logo-title{
     display: flex;
     align-items: center;
     align-content: flex-start;
     gap: 10px;
 }
-/*This changes the color of the header and also makes the lists look better.*/
+
+/* Header: color, padding, layout */
 header {
-  
     background-color: hsla(224, 14%, 22%, 1);
     color: hsla(240, 100%, 99%, 1);
     padding: 1rem 2rem;
@@ -33,17 +43,23 @@ header {
     justify-content: space-between;  
     gap: 1rem;
 }
+
+/* Header sticky */
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: hsla(224, 14%, 22%, 1);
 }
+
+/* Header title */
 header h1{
     margin: 0;
     font-size: 1.8rem;
-    color: hsla(60, 100%, 76%, 1);;
+    color: hsla(60, 100%, 76%, 1);
 }
+
+/* Navs: list horizontal */
 nav ul {
     list-style: none;
     padding: 0;
@@ -52,18 +68,25 @@ nav ul {
     gap: 2rem;
     margin-top: 1rem;
 }
-nav a:hover{
-    background-color: hsla(257, 100%, 93%, 1);
-    color:hsla(224, 14%, 22%, 1) ;
-    padding: 10px;
-    border-radius: 10px;
-}
+
+/* Links navegación normaland hover */
 nav a {
     color: hsla(240, 100%, 99%, 1);
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
 }
+
+nav a:hover{
+    background-color: hsla(257, 100%, 93%, 1);
+    color:hsla(224, 14%, 22%, 1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* ------------------------------ */
+/* MAIN Y SECCIONES */
+/* ------------------------------ */
 
 main {
     padding: 2rem;
@@ -73,14 +96,10 @@ section {
     margin-bottom: 2rem;
 }
 
-footer {
-    text-align: center;
-    background-color: #003845;
-    color: hsla(240, 100%, 99%, 1);
-    padding: 1rem;
-    position: relative;
-}
-/* Positions the main image right below the header and crops its height */
+/* ------------------------------ */
+/* HERO IMAGE */
+/* ------------------------------ */
+
 .hero-img img{
     width: 100%;
     display: block;
@@ -91,8 +110,7 @@ html, body, main, .hero-image {
     margin: 0;
     padding: 0;
 }
-/* Positions the 'Welcome' text above the main image for a layered effect */
-
+/* Texto sobre la imagen principal */
 #home{
     font-size: 40px;
     padding: 1rem;
@@ -101,9 +119,11 @@ html, body, main, .hero-image {
     right: 50vh;
     color: hsla(240, 100%, 99%, 1);
     text-shadow: 0 0 10px #403e40, 0 0 20px #383338;
-
 }
-/* Applies styling to the About Us section so that its image and layout appear well-designed */
+
+/* ------------------------------ */
+/* ABOUT US  */
+/* ------------------------------ */
 
 #about-us {
   display: flex;
@@ -142,14 +162,64 @@ html, body, main, .hero-image {
   margin-bottom: 1rem;
   color: #555;
 }
-@media (max-width: 768px) {
-  #about-us {
-    flex-direction: column;
-    padding: 1rem;
-  }}
 
-/* Applies styling to the trip and tour section so that its image and layout appear well-designed */
+/* ------------------------------ */
+/* ABOUT US - PAGE 2 */
+/* ------------------------------ */
 
+.title {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2rem;
+  text-transform: uppercase; 
+  letter-spacing: 0.1em;   
+}
+
+.title h2 {
+  font-size: 3rem;
+  margin: 0;
+  color: #222; 
+}
+
+#page2_about {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 0 2rem;
+  align-items: flex-start; 
+  flex-direction: row-reverse;
+}
+
+.about-us-image_2 {
+  flex: 1;
+  max-width: 400px;
+}
+
+.about-us-image_2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+}
+
+.about-us-text_2 {
+  flex: 2;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.about-us-text_2 p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* ------------------------------ */
+/* TRIP AND TOUR */
+/* ------------------------------ */
 
 #trip-and-tour {
   display: flex;
@@ -197,31 +267,16 @@ html, body, main, .hero-image {
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 768px) {
-  #trip-and-tour {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .trip-image, .trip-text {
-    flex: unset;
-    width: 100%;
-  }
-
-  .trip-text h2 {
-    text-align: center;
-  }
-}
+/* Iconos en listas */
 ul li i {
   font-size: 1.2rem;
   color: #1abc9c; 
   margin-right: 8px;
-  
 }
-ul{
-  list-style: none;
-}
-/* Applies styling to the reservation button and creates a pop-up effect below it to simulate a reservation process */
+
+/* ------------------------------ */
+/* RESERVATION CONFIRM */
+/* ------------------------------ */
 
 #reservation-confirm {
   display: flex;
@@ -278,7 +333,10 @@ ul{
 #toggle-message:checked + label + .success-message {
   display: block;
 }
-/* Applies styling to the community blog section so that its image and layout appear well-designed */
+
+/* ------------------------------ */
+/* COMMUNITY BLOG */
+/* ------------------------------ */
 
 .community-blog {
   max-width: 1200px;
@@ -318,15 +376,11 @@ ul{
   color: #555;
 }
 
-.community-blog ul {
-  list-style: none;
-  padding-left: 0;
-}
-
 .community-blog ul li {
   margin-bottom: 0.8rem;
   font-weight: 600;
 }
+
 .community-blog ul li a.blog-link {
   font-weight: 600;
   color: #007bff;
@@ -339,7 +393,10 @@ ul{
   text-decoration: underline;
   cursor: pointer;
 }
-/* Applies styling to the contact us section so that its image and layout appear well-designed */
+
+/* ------------------------------ */
+/* CONTACT SECTION */
+/* ------------------------------ */
 
 #contact{
   display: flex;
@@ -347,9 +404,188 @@ ul{
   gap: 2rem;
   padding: 2rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
   font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
   color: #555;
+}
+
+/* ------------------------------ */
+/* HISTORY SECTION */
+/* ------------------------------ */
+
+.history-section {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.history-section h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+}
+
+.history-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.history-paragraph {
+  flex: 1;
+  text-align: left;
+}
+
+.history-paragraph p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.history-image {
+  flex: 1;
+  max-width: 300px;
+}
+
+.history-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* ------------------------------ */
+/* ADVENTURES AWAIT YOU SECTION */
+/* ------------------------------ */
+
+.adventures-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.adventures-section h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.adventures-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.adventures-gallery figure {
+  flex: 1 1 180px;  
+  max-width: 180px;
+  text-align: center;
+}
+
+.adventures-gallery img {
+  width: 100%;       
+  height: 140px;      
+  object-fit: cover;  
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.adventures-gallery figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ------------------------------ */
+/* FOOTER */
+/* ------------------------------ */
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #cec7c7;
+  font-family: 'Poppins', sans-serif;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: #444;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0077cc;
+}
+
+/* ------------------------------ */
+/* RESPONSIVE */
+/* ------------------------------ */
+
+@media (max-width: 768px) {
+  /* About us page 2 */
+  #page2_about {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .about-us-image_2,
+  .about-us-text_2 {
+    max-width: 100%;
+  }
+
+  /* About us (original) */
+  #about-us {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  /* Trip and tour */
+  #trip-and-tour {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .trip-image, .trip-text {
+    flex: unset;
+    width: 100%;
+  }
+
+  .trip-text h2 {
+    text-align: center;
+  }
+
+  /* History content layout */
+  .history-content {
+    flex-direction: column;
+  }
+
+  /* Contact */
+  #contact {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
