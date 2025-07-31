@@ -517,14 +517,14 @@ footer {
 
 .social-icons {
   margin-top: 1rem;
-  display: flex;                /* hace que los hijos estén en fila */
-  justify-content: center;      /* centra horizontalmente */
-  align-items: center;          /* centra verticalmente */
-  gap: 15px;                   /* espacio entre iconos */
+  display: flex;                
+  justify-content: center;      
+  align-items: center;          
+  gap: 15px;                   
 }
 
 .social-icons a {
-  display: inline-flex;         /* contenedor cuadrado para el ícono */
+  display: inline-flex;         
   align-items: center;
   justify-content: center;
   width: 40px;
