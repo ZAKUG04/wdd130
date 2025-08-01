@@ -28,29 +28,43 @@
   </header>
 
   <main>
-      <h1>Contact US</h1>
+      <h1 id="titulo">Contact Us</h1>
     <div class="content_inf">
       <h2>Company Info</h2>
       <p><strong>Address:</strong> 123 River Street, Rapids City</p>
       <p><strong>Phone:</strong> +1 (555) 123-4567</p>
       <p><strong>Email:</strong> contact@riverrush.com</p>
+      <section class="map-section">
+        <h2>Find Us Here</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1700316807935!2d-122.41941548468199!3d37.77492977975978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c8d143c77%3A0x95e64ae3d6970e1a!2s123%20River%20St%2C%20Rapids%20City!5e0!3m2!1sen!2sus!4v1620000000000"
+          allowfullscreen 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
     </div>
 
    <div class="employees">
-      <h2>Employee Profiles</h2>
-      <div class="employee">
-        <img src="images/luis.jpg" alt="Luis">
-        <p>Luis</p>
-      </div>
-      <div class="employee">
-        <img src="images/julia.jpg" alt="Julia">
-        <p>Julia</p>
-      </div>
-      <div class="employee">
-        <img src="images/pedro.jpg" alt="Pedro">
-        <p>Pedro</p>
-      </div>
-    </div>
+  <h2>Employee Profiles</h2>
+
+  <div class="employee">
+    <img src="images/liderazgo-hombre-negro-exitoso-gerente-contabilidad-corporativa-trabajan-oficina-compania-financiera-contador-financiero-consultor-africano-consultoria-inicio-negocios-feliz-vision-mision_5.avif" alt="Luis smiling">
+    <p><strong>Luis Camacho</strong></p>
+    <p>Tour Guide</p>
+  </div>
+
+  <div class="employee">
+    <img src="images/mujer-negocios-segura-si-misma_329181-11696.avif" alt="Julia smiling">
+    <p><strong>Julia Mercedez</strong></p>
+    <p>Reservations Manager</p>
+  </div>
+
+  <div class="employee">
+    <img src="images/Jungkook.jpeg" alt="Pedro smiling">
+    <p><strong>Pedro wong</strong></p>
+    <p>Safety Supervisor</p>
+  </div>
+</div>
    <section>
       <h2>Contact Form</h2>
       <form action="#" method="post">
@@ -59,17 +73,17 @@
 
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" required>
-
-        <label><input type="checkbox" name="topic" value="general"> General</label>
-        <label><input type="checkbox" name="topic" value="reservation"> Reservation</label>
-        <label><input type="checkbox" name="topic" value="website"> Website</label>
+            <p>Purpose of the message:</p>
+            <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+            <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+            <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
 
         <label for="message">Message:</label>
         <textarea name="message" id="message" rows="5" required></textarea>
 
-        <label><input type="checkbox" name="subscribe"> Subscribe to our channel</label>
+        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
 
-        <button type="submit">Send</button>
+        <button type="submit" aria-label="Send contact form">Send</button>
       </form>
     </section>
   </main>
@@ -90,6 +104,7 @@
     <span class="sr-only">Instagram</span>
   </a>
 </div>
+<p><a href="images/wireframe_contacts.jpg" target="_blank">View Contact Page Wireframe</a></p>
 </footer>
 
 
