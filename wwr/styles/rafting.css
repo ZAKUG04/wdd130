@@ -120,7 +120,12 @@ html, body, main, .hero-image {
     color: hsla(240, 100%, 99%, 1);
     text-shadow: 0 0 10px #403e40, 0 0 20px #383338;
 }
-
+#home h2{
+  color: #000000;
+}
+#home h2:hover{
+  color: #ffffff;
+}
 /* ------------------------------ */
 /* ABOUT US  */
 /* ------------------------------ */
