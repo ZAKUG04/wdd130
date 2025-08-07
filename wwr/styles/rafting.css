@@ -7,6 +7,9 @@ main {
   margin: 0;
   padding: 0;
 }
+* {
+  box-sizing: border-box;
+}
 body{
   overflow-y: scroll;
 }
@@ -158,11 +161,12 @@ html, body, main, .hero-img {
 /* ------------------------------ */
 
 #newsletter {
-  background-color: #f0f8ff;
+ 
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
   margin-top: 2rem;
+  background-color: #f3f3f3; /* opcional, solo si quieres que el contenedor se distinga */
 }
 
 #newsletter h2 {
@@ -176,6 +180,8 @@ html, body, main, .hero-img {
   gap: 1rem;
   max-width: 400px;
   margin: 0 auto;
+  background-color: #a9a9aa;
+  
 }
 
 #newsletter input {
@@ -873,9 +879,10 @@ iframe {
 
 .trip img {
   width: 200px;
-  height: auto;
+  height: 200px;
   border-radius: 10px;
   object-fit: cover;
+  
 }
 
 .trip-text {
@@ -915,7 +922,7 @@ iframe {
 
 /* Encabezado */
 .trip-table thead {
-  background-color: #f2d7a1;
+  background-color: #B59E00;
   color: rgb(0, 0, 0);
 }
 
